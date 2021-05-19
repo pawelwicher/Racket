@@ -10,3 +10,7 @@ x
 x
 
 (square 5)
+
+(quotient 5 4)
+
+(second '(1 2 3))
