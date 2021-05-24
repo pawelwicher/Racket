@@ -27,3 +27,15 @@ x
 (zero? 0)
 
 (= 1 2)
+
+(cons 1 2)
+
+(cons 1 (cons 2 (cons 3 empty)))
+
+(list 1 2 3)
+
+'(1 2 3)
+
+(define xs '(1 2 3 4 5 6 7))
+
+(length xs)
