@@ -39,3 +39,9 @@ x
 (define xs '(1 2 3 4 5 6 7))
 
 (length xs)
+
+(define foo 2)
+
+(cond [(= foo 1) 'one]
+      [(= foo 2) 'two]
+      [else 'something-else])
