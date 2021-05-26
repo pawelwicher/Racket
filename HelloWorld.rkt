@@ -45,3 +45,5 @@ x
 (cond [(= foo 1) 'one]
       [(= foo 2) 'two]
       [else 'something-else])
+
+(and #f 2)
