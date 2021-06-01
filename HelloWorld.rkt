@@ -36,14 +36,42 @@ x
 
 '(1 2 3)
 
+(empty? '())
+
+(list? '())
+
+(integer? 1.0)
+
 (define xs '(1 2 3 4 5 6 7))
 
 (length xs)
 
 (define foo 2)
 
+(if (= foo 2)
+    'foo-2
+    'foo-else)
+
+(set! foo 1)
+
 (cond [(= foo 1) 'one]
       [(= foo 2) 'two]
       [else 'something-else])
 
 (and #f 2)
+
+(and #t 2)
+
+(require rackunit)
+
+(check-equal? 1 1)
+
+(struct person (name age))
+
+(define bob (person 'Bob 37))
+
+(person-name bob)
+
+(if (= (person-age bob) 37)
+    'bob-is-37-years-old
+    'bob-is-not-37-years-old)
