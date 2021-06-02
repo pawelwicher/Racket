@@ -66,6 +66,10 @@ x
 
 (check-equal? 1 1)
 
+(check-equal? 1 2)
+
+(check-true 1 "1 is not true")
+
 (struct person (name age) #:transparent)
 
 (define bob (person 'Bob 37))
