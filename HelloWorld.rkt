@@ -66,9 +66,11 @@ x
 
 (check-equal? 1 1)
 
-(struct person (name age))
+(struct person (name age) #:transparent)
 
 (define bob (person 'Bob 37))
+
+bob
 
 (person-name bob)
 
