@@ -1,4 +1,4 @@
-#lang racket
+#lang racket/gui
 
 #|
 Hello
@@ -81,3 +81,39 @@ bob
 (if (= (person-age bob) 37)
     'bob-is-37-years-old
     'bob-is-not-37-years-old)
+
+(define str "AbCdE")
+
+(string-downcase str)
+
+(string-upcase str)
+
+#|
+(define frame (new frame%
+                   [label "Example"]
+                   [width 300]
+                   [height 300]))
+(new canvas% [parent frame]
+             [paint-callback
+              (lambda (canvas dc)
+                (send dc set-scale 3 3)
+                (send dc set-text-foreground "blue")
+                (send dc draw-text "Don't Panic!" 0 0))])
+(send frame show #t)
+|#
+
+(let* ([x (list "Burroughs")]
+       [y (cons "Rice" x)]
+       [z (cons "Edgar" y)])
+  (list x y z))
+
+
+(for ([i (in-naturals 1)]
+      [chapter '("Intro" "Details" "Conclusion")])
+    (printf "Chapter ~a. ~a\n" i chapter))
+
+(for/list ([i (in-naturals 1)]
+           [j '(1 2 3)])
+    j)
+
+
