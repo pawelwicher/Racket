@@ -113,7 +113,8 @@ bob
     (printf "Chapter ~a. ~a\n" i chapter))
 
 (for/list ([i (in-naturals 1)]
-           [j '(1 2 3)])
-    j)
+           [n '(1 2 3)])
+    n)
 
-
+(for/list ([n (range 1 10)] #:when (odd? n))  
+    n)
