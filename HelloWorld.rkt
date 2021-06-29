@@ -125,3 +125,4 @@ bob
 
 (map expt2 (for/list ([n (range 1 11)]) n))
 
+(map add1 (range 1 10))
