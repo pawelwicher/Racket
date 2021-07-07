@@ -64,11 +64,11 @@ x
 
 (require rackunit)
 
-(check-equal? 1 1)
+;(check-equal? 1 1)
 
-(check-equal? 1 2)
+;(check-equal? 1 2)
 
-(check-true 1 "1 is not true")
+;(check-true 1 "1 is not true")
 
 (struct person (name age) #:transparent)
 
@@ -126,3 +126,22 @@ bob
 (map expt2 (for/list ([n (range 1 11)]) n))
 
 (map add1 (range 1 10))
+
+'----------
+
+(for ([i '(1 2 3)])
+    (display i))
+
+(display "\n")
+
+(for ([i 4])
+    (display i))
+
+(display "\n")
+
+(for/list ([i '(1 2 3)])
+    (* i i))
+
+(for/list ([i 4])
+    i)
+
