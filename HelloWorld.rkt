@@ -145,3 +145,8 @@ bob
 (for/list ([i 4])
     i)
 
+(equal? '() null)
+
+(first '(1 2 3 4 5))
+
+(rest '(1 2 3 4 5))
