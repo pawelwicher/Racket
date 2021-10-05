@@ -150,3 +150,6 @@ bob
 (first '(1 2 3 4 5))
 
 (rest '(1 2 3 4 5))
+
+(define-values (a b c) (values 1 2 3))
+a b c
